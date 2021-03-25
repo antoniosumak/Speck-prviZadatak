@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+}
+.header__container {
+  display: flex;
+  max-width: 1280px;
+  height: 100%;
+  margin: auto;
+  align-items: center;
+}
+.header__logo,
+.navigation {
+  flex: 50%;
+}
+.header__logo {
+  justify-content: flex-start;
+}
+
+.header__logo_img {
+  width: 80px;
+  height: 50px;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: flex-end;
+}
+ul li a {
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 22px;
+  transition: ease-in-out 0.3s;
+}
+span {
+  color: #d33e3e;
+}
+a:hover {
+  color: #d33e3e;
+  cursor: pointer;
+}
+.hero__title {
+  margin-top: 100px;
+  text-align: center !important;
+}
+.hero {
+  width: 100%;
+  height: 500px;
+  background-image: url(/images/hero.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+.hero__title {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+h1 {
+  color: #e4b43c;
+  line-height: 140%;
+  width: 500px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.hero__description {
+  width: 800px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #fff;
+  text-align: left;
+}
+
+/*FEATURED POCETAK*/
+.featured {
+  width: 1280px;
+  min-height: 50vh;
+  margin: auto;
+  padding: 80px 0px;
+  height: auto;
+}
+.featured__naslov {
+  text-align: center;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.featured__row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.element {
+  width: 350px;
+  min-height: 400px;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.element:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.element.first,
+.element.second {
+  margin-right: 50px;
+}
+
+.element__picture {
+  width: 100%;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+.element__title {
+  margin-bottom: 10px;
+}
+.element__description {
+  margin-bottom: 20px;
+}
+.cta {
+  width: 100%;
+  line-height: 40px;
+  background-color: #d33e3e;
+  border: 1px solid #d33e3e;
+  border-radius: 6px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.cta:hover {
+  background-color: #e4b43c;
+  border: 1px solid #e4b43c;
+  cursor: pointer;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  padding: 40px 0px;
+  background-color: #333333;
+  bottom: 0;
+  left: 0;
+}
+.footer__text {
+  text-align: center;
+  color: #d0d0d0;
+  font-size: 14px;
+}
